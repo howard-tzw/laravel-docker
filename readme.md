@@ -15,9 +15,9 @@ Comes with:
 - `cp .env.example .env`
 - `docker-compose exec app php artisan key:generate`
 
-Now that all containers are up, we can add `127.0.0.1 project.local` to our `/etc/hosts` file
+Now that all containers are up, we can add `127.0.0.1 laravel.test` to our `/etc/hosts` file
 
-Boom! access `project.local` on your favorite browser
+Boom! access `laravel.test` on your favorite browser
 
 ## Questions and Improvements
 

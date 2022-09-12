@@ -28,10 +28,10 @@ services:
     tty: true
     environment:
     - VIRTUAL_PORT=80
-    - VIRTUAL_HOST=project.local
+    - VIRTUAL_HOST=laravel.test
     ports:
-      - "80:80"
-      - "443:443"
+      - "8000:80"
+      - "4430:443"
     volumes:
       - ./:/var/www
       - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
