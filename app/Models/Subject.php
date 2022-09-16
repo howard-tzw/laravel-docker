@@ -6,16 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subject extends Model
 {
-      /**
+    /**
      * The attributes that are mass assigable.
-     * 
+     *
      * @var array
      */
     protected $fillable = [
-        'name'
+        'name',
     ];
 
-    public function posts() {
+    public function posts()
+    {
         return $this->hasMany(Post::class);
     }
 }

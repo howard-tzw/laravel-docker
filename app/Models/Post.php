@@ -22,4 +22,18 @@ class Post extends Model
     public function tags() {
         return $this->belongsToMany(Tag::class);
     }
+
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+
+    // Mutator
+
+    // public function getContentAttribute($content) {
+    //     return decrypt($content);
+    // }
+
+    // public function setContentAttribute($content) {
+    //     $this->attributes['content'] = encrypt($content);
+    // }
 }
