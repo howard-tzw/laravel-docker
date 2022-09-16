@@ -1,5 +1,10 @@
 <?php
 
+use App\Models\Post;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +27,7 @@ Route::get('/about_us', function () {
     return view('about_us', ['name' => 'Laravel 6.2 教學範例']);
 });
 Route::get('/test', function () {
-    $post = App\Models\Post::find(1);
+    $post = Post::find(1);
     return $post->tags;
 });
 Route::get('/add', 'InspiringController@add');
@@ -40,3 +45,9 @@ Route::get('/who', function () {
 });
 
 Route::resource('posts', 'PostController');
+
+Route::get('/zh-tw', function(){
+    App::setLocale('en');
+    return trans('auth.failed');
+});
+
