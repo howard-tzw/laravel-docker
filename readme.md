@@ -26,3 +26,6 @@ For any question or emprovement please send an e-mail to Shady Smaoui [shady@vel
 ## License
 
 ShadySmaoui©2020 licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Issues
+- laravel-lang not works
